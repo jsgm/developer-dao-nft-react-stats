@@ -3,4 +3,5 @@ A simple React app to explore [DEVS tokens](https://etherscan.io/token/0x25ed58c
 
 - ⭐ **[View website here](https://developer-dao-nft-stats.vercel.app/)**
 - Data took from **[this website](https://developerdao.vercel.app/)**.
+- More analytics for the token **[here](https://dune.xyz/foreignbyproxy/Developer-DAO)**
 - Feel free to pull changes if you'd like to!
