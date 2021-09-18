@@ -3,10 +3,7 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 
 export function PropChart({title, data, type}) {
-    let total = 0;
-    data.map(function(object, index){
-        total += object.count;
-    });
+    let total = 8000;
 
     data.sort(function(a, b) {
         return a.count - b.count;
@@ -57,7 +54,7 @@ export function PropChart({title, data, type}) {
                             <tbody>
                                 {data.map(function(object, index){
                                     return <tr key={index}>
-                                        <td>{object.label} {index==0 ? <span id="RarestItem">🔥 Rarest</span> : ''}</td>
+                                        <td>{object.label} {index===0 ? <span id="RarestItem">🔥 Rarest</span> : ''}</td>
                                         <td>{object.count}</td>
                                         <td>{(object.count/total*100).toFixed(4)}%</td>
                                     </tr>

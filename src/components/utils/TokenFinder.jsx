@@ -34,7 +34,7 @@ export class TokenFinderBox extends Component{
         }
 
         let optionsValues = []
-        options.map((value) => {
+        options.forEach((value) => {
             optionsValues.push(value.value)
         })
 
@@ -94,14 +94,14 @@ function TokenFindersRender({ filters }){
     
     const filtered = multiFilter(developerTokens, filters);
 
-    if(filtered.length == 8000){
+    if(filtered.length === 8000){
         return (   
             <div class="alert alert-danger" role="alert">
                 Select the filters to see the tokens ID.
             </div>
         )        
     }
-    if(filters.length==0 || filtered.length == 0){
+    if(filters.length===0 || filtered.length === 0){
         return (   
             <div class="alert alert-danger" role="alert">
                 Not lucky this time! There are not results for the filters you set.
