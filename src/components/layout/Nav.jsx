@@ -69,7 +69,7 @@ export class Content extends Component{
 export function Footer() {
     return (
         <div class="container mt-5 mb-4 text-left text-muted">
-            Github | <a href="https://developersdao.com">Developers DAO</a> | Data from <a href="https://developerdao.vercel.app/">developerdao.vercel.app</a>
+            <a href="https://github.com/jsgm/developer-dao-nft-react-stats">Github</a> | <a href="https://developersdao.com">Developers DAO</a> | Data from <a href="https://developerdao.vercel.app/">developerdao.vercel.app</a>
         </div>
     )
 }
